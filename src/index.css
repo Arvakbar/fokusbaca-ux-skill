@@ -1,0 +1,73 @@
+﻿:root {
+  --bg: #faf9f6;
+  --surface: #fff;
+  --text: #1d2924;
+  --muted: #50645b;
+  --primary: #184b37;
+  --primary-hover: #103626;
+  --border: #d4ddd6;
+  --focus: #b45309;
+  --warning-surface: #fff5dd;
+  --soft-green: #edf3ee;
+  --warning-text: #70480d;
+  --reading-max: 720px;
+  --page-max: 1120px;
+  --gutter: clamp(16px, 3vw, 40px);
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  font: 100%/1.65 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, dl, dd {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: -0.035em;
+}
+
+a {
+  color: var(--primary);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+h1:focus-visible, h2:focus-visible {
+  outline-offset: 5px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+

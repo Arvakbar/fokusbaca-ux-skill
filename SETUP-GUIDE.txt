@@ -1,0 +1,17 @@
+PANDUAN SETUP EKSPERIMEN B
+
+1. Di terminal VS Code, pindah ke folder Rekayasa Interaksi.
+2. npm create vite@latest fokusbaca-ux-skill -- --template react
+3. Pilih ESLint, install dependencies (jika diminta).
+4. Pastikan project baru, bukan folder eksperimen A.
+5. Salin ke ROOT project baru: README.md, UX-SPEC.md, DESIGN-SYSTEM.md,
+   INTERACTION-SPEC.md, ACCEPTANCE-CRITERIA.md, AGENTS.md, CHANGELOG.md.
+6. Salin folder .agents/skills/fokusbaca-ux beserta SKILL.md ke project baru.
+7. Jangan salin SETUP-GUIDE.txt jika tidak diperlukan.
+8. Kirim prompt Codex sebagaimana instruksi dalam percakapan; minta read all docs.
+9. Jalankan npm run lint, npm run build, npm run dev dan uji manual.
+10. git init; git branch -M main; git add .; git commit; git remote add origin
+    https://github.com/Arvakbar/fokusbaca-ux-skill.git; git push -u origin main.
+11. Deploy ke Vercel lewat import repository; framework Vite; output dist.
+
+Catatan: README.md harus identik dengan baseline sebelum implementasi untuk fair comparison.
